@@ -1,3 +1,4 @@
+<?php
 # 課題の回答は このファイル をご利用下さい。
 # 回答の出力を確認される際は，「php task.php」をターミナルから実行して下さい。
 
@@ -38,7 +39,7 @@ print("#####q4#####".PHP_EOL);
 $sports = ["サッカー", "フットサル", null, "野球", "バスケ", null, "バレー"];
 
   # 以下に回答を記載
-$sports = $array_diff($sports,[null]);
+$sports = array_diff($sports,[null]);
 print_r($sports);
 
 echo PHP_EOL;
@@ -229,3 +230,4 @@ foreach($humans as $human){
 }
 
 echo PHP_EOL;
+?>
