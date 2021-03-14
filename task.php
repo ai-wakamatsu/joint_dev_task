@@ -147,6 +147,7 @@ print("#####q12#####".PHP_EOL);
 $data = [ "user" => [ "name" => "satou", "age" => 33 ] ];
 
   # 以下に回答を記載
+echo $data["user"]["name"];
 
 echo PHP_EOL;
 
@@ -155,6 +156,8 @@ $user_data = [ "name" => "神里", "age" => 31, "address" => "埼玉"];
 $update_data = [ "age" => 32, "address" => "沖縄" ];
 
   # 以下に回答を記載
+$user_data = $update_date + $user_data;
+echo $user_data;
 
 echo PHP_EOL;
 
@@ -162,6 +165,8 @@ print("#####q14#####".PHP_EOL);
 $data = [ "name" => "satou", "age" => 33, "address" => "saitama", "hobby" => "soccer", "email" => "hoge@fuga.com" ];
 
   # 以下に回答を記載
+$array = array_values($data);
+echo $array;
 
 echo PHP_EOL;
 
@@ -170,6 +175,16 @@ $data1 = [ "name" => "saitou", "hobby" => "soccer", "age" => 33, "role" => "admi
 $data2 = [ "name" => "yamada", "hobby" => "baseball", "role" => "normal" ];
 
   # 以下に回答を記載
+function age($data) {
+  if(array_key_exists("age", $data)){
+    echo "OK".PHP_EOL;
+  }else{
+    echo "NG".PHP_EOL;
+  }
+}
+
+age($data1);
+age($data2);
 
 echo PHP_EOL;
 
