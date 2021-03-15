@@ -156,8 +156,8 @@ $user_data = [ "name" => "神里", "age" => 31, "address" => "埼玉"];
 $update_data = [ "age" => 32, "address" => "沖縄" ];
 
   # 以下に回答を記載
-$user_data = $update_date + $user_data;
-echo $user_data;
+$user_data = $update_data + $user_data;
+print_r($user_data);
 
 echo PHP_EOL;
 
@@ -166,7 +166,7 @@ $data = [ "name" => "satou", "age" => 33, "address" => "saitama", "hobby" => "so
 
   # 以下に回答を記載
 $array = array_values($data);
-echo $array;
+print_r($array);
 
 echo PHP_EOL;
 
@@ -198,7 +198,7 @@ $users = [
 
   # 以下に回答を記載
 foreach($users as $user) {
-  echo "私の名前は".$user["name"]."です。年齢は".$user["age"]."歳です。”.PHP_EOL;
+  echo "私の名前は".$user["name"]."です。年齢は".$user["age"]."歳です。".PHP_EOL;
 }
 
 echo PHP_EOL;
