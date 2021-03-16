@@ -99,7 +99,7 @@ $names = ["田中", "佐藤", "佐々木", "高橋"];
 $members = [];
 foreach($names as $key => $name) {
   $number = $key + 1;
-  $member = "会員No.".$number."".$name;
+  $member = "会員No.".$number." ".$name;
   array_push($members,$member);
 }
 print_r($members);
@@ -116,7 +116,7 @@ foreach($foods as $food) {
   } else {
     echo "まあまあ好きです".PHP_EOL;
   }
-}  
+}
 
 echo PHP_EOL;
 
@@ -124,6 +124,7 @@ print("#####q11#####".PHP_EOL);
 $sports = ["サッカー", "バスケ", "野球", ["フットサル", "野球"], "水泳", "ハンドボール", ["卓球", "サッカー", "ボルダリング"]];
 
   # 以下に回答を記載
+$hobbys = [];  
 foreach($sports as $sport) {
   if(is_array($sport)) {
     $hobbys = array_merge($hobbys,$sport);
@@ -323,7 +324,11 @@ echo PHP_EOL;
  print("#####q21#####".PHP_EOL);
 
 for($i = 1; $i <= 30; $i++) {
-  if($i % 3 == 0 && $i % 7 == 0) {
+  if($i % 3 == 0 && $i % 5 == 0 && $i % 7 == 0) {
+    echo "FizzBuzzHoge".PHP_EOL;
+  }elseif($i % 5 == 0 && $i % 7 == 0) {
+    echo "BuzzHoge".PHP_EOL;
+  }elseif($i % 3 == 0 && $i % 7 == 0) {
     echo "FizzHoge".PHP_EOL;
   }elseif($i % 3 == 0 && $i % 5 == 0) {
     echo "FizzBuzz".PHP_EOL;
